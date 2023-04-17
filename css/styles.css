@@ -1,3 +1,4 @@
+
 :root {
   /* Fonts */
   --primary-font: "Roboto", sans-serif;
@@ -13,11 +14,14 @@
   --bg-light-color: #f4f4fd;
 
   --accent-color: #4d5ae5;
+  
+  --hover-focus-color: #404bbf;
 }
 
 body {
-  color: var(--main-text-color);
+  color: var(--light-color);
   font-family: var(--primary-font);
+  background-color: var(--white-color);
 }
 
 a {
@@ -32,23 +36,32 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.link:hover{
+color: var(--hover-focus-color);
+}
+
+.link:focus{
+  color: var(--hover-focus-color);
+}
 /* Header */
 .logo {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--accent-color);
   text-transform: uppercase;
 }
 .logo-part {
-  color: #4d5ae5;
+  color: var(--main-text-color);
 }
 
 .header-nav-item {
   font-family: var(--primary-font);
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -76,6 +89,7 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  text-align: center;
 }
 
 .btn {
@@ -93,8 +107,17 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
+.btn:hover{
+ background-color: var(--hover-focus-color);
+}
+
+.btn:focus{
+  background-color: var(--hover-focus-color);
+  
+}
 /* About us */
 .about-us,
 .team-name {
@@ -108,7 +131,7 @@ a {
 .team-descr {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
 }
@@ -120,13 +143,24 @@ a {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
   color: var(--main-text-color);
 }
 
+/* Our Team */
+
+.our-team{
+  background-color: var(--bg-light-color);
+}
+.team-list-item{
+  background-color: var(--white-color);
+}
 /* Footer */
 
 .footer {
   background-color: var(--bg-dark-color);
+  font-family: var(--secondary-font);
 }
 
 .footer-descr {
@@ -135,17 +169,20 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  font-family: var(--primary-font);
 }
 
 .footer-logo {
-  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: var(--accent-color);
   text-transform: uppercase;
+}
+.footer-logo-part{
+  color: var(--secondary-text-color);
 }
 
 /* PORTFOLIO */
@@ -178,4 +215,17 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
