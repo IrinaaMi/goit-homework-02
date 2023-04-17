@@ -7,7 +7,7 @@
   --main-text-color: #2e2f42;
   --light-color: #434455;
   --white-color: #ffffff;
-  --footer-text-color: #f4f4fd;
+  --secondary-text-color: #f4f4fd;
 
   --bg-dark-color: #2e2f42;
   --bg-light-color: #f4f4fd;
@@ -115,35 +115,67 @@ a {
 
 /* What are we doing */
 
-.title{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-color: var(--main-text-color);
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
- 
+
 /* Footer */
 
-.footer{
-    background-color: var(--bg-dark-color);
+.footer {
+  background-color: var(--bg-dark-color);
 }
 
-.footer-descr{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--footer-text-color);
+.footer-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
-.footer-logo{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.16;
-letter-spacing: 0.03em;
-color: var(--white-color);
-text-transform: uppercase;
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/* PORTFOLIO */
+
+/* Button */
+
+.button {
+  padding: 12px 24px;
+  width: 116px;
+  height: 48px;
+  background-color: var(--secondary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+}
+ /* Portfolio list */
+.list-item-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.list-item-descr {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
 }
