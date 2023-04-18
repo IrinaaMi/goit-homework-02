@@ -193,18 +193,28 @@ color: var(--hover-focus-color);
 
 /* Button */
 
-.button {
+.page-nav-button {
   padding: 12px 24px;
   width: 116px;
   height: 48px;
   background-color: var(--secondary-text-color);
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--accent-color);
+  cursor: pointer;
+}
+.page-nav-button:hover{
+  color: var(--white-color);
+  background-color: var(--hover-focus-color);
+}
+
+.page-nav-button:focus{
+  color: var(--white-color);
+  background-color: var(--hover-focus-color);
 }
  /* Portfolio list */
 .list-item-name {
@@ -215,13 +225,13 @@ color: var(--hover-focus-color);
   color: var(--main-text-color);
 }
 .list-item-descr {
-  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
 }
 
-.visually-hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
